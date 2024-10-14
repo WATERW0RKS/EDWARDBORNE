@@ -1,7 +1,10 @@
 # CO library setup
 
-
-# mv edits
-#set up variables
-#health = 100
-#
+#MAKE THE WINDOW
+#SCREEN RESOLUTION
+#MAKE CHARACTER
+#MAKE GRAVITY
+#MAKE DODGE MECHANIC
+#MAKE HITBOXES
+#BALANCING
+#AGONY
