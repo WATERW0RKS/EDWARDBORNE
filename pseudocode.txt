@@ -1,0 +1,34 @@
+ CO library setup
+N.S = B.S BECAUSE MY INITIALS ARE STUPID
+ -- N.S
+MAKE THE WINDOW
+   -- N.S
+  USE ARCADE LIBRARY TO CREATE A WINDOW FOR THE GAME
+SCREEN RESOLUTION
+   -- N.S
+  1920x1080
+MAKE CHARACTER
+   -- N.S
+  EDWARD
+
+MOVEMENT
+MAKE GRAVITY
+MAKE DODGE MECHANIC
+  M.V. (set up invincibility frames)
+MAKE HIT BOXES
+BALANCING
+  M.V. (Set up magic damage, Health, Physical Damage)
+AGONY
+BJ (make first enemy frank the hippo)
+
+
+SETTING
+    M.V (Inside a computer)
+ENEMIES
+    M.V (Computer bugs)
+BOSSES?
+
+LEVELS
+    -- N.S
+    FIRST LEVEL
+        POWER SUPPLY
