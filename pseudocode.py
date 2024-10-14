@@ -17,3 +17,4 @@
 #BALANCING
   #M.V. (Set up magic damage, Health, Physical Damage)
 #AGONY
+#BJ (make first enemy frank the hippo)
