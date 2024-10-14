@@ -12,6 +12,8 @@
   #EDWARD
 #MAKE GRAVITY
 #MAKE DODGE MECHANIC
+  #M.V. (set up invincibility frames)
 #MAKE HITBOXES
 #BALANCING
+  #M.V. (Set up magic damage, Health, Physical Damage)
 #AGONY
