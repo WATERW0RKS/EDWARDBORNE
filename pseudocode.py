@@ -19,3 +19,4 @@
 #AGONY
 #BJ (make first enemy frank the hippo)
 #create healing potion (egg)
+#create jump phycics 
