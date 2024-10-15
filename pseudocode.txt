@@ -19,16 +19,31 @@ MAKE HIT BOXES
 BALANCING
   M.V. (Set up magic damage, Health, Physical Damage)
 AGONY
-BJ (make first enemy frank the hippo)
+
 
 
 SETTING
     M.V (Inside a computer)
 ENEMIES
     M.V (Computer bugs)
+
+
 BOSSES?
+ Brady
+ Gilbert Supreme
+ Gilbert Hologram "A.K.A GLIBBERT"
+ STORM WORM
 
 LEVELS
     -- N.S
     FIRST LEVEL
         POWER SUPPLY
+DEATH-SCREEN
+BSoD
+
+ABILITY
+OHP-FLASH DRIVE
+USB KILLER
+ETHERNET GRAPPLING HOOK
+
+
