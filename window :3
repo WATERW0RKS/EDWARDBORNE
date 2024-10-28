@@ -1,47 +1,30 @@
 """
-Platformer Game
+EDWARDBORNE
 """
 import arcade
+from arcade.examples.sprite_bullets_aimed import SCREEN_HEIGHT, SCREEN_TITLE
 
-# Constants
-edwardborne_SCREEN_WIDTH = 1920
-edwardborne_SCREEN_HEIGHT = 1080
-edwardborne_SCREEN_TITLE = "The game of all time: EdwardBorne(No correlation to bloodborne)"
+SCREEN_WIDTH = 1920
+SCREEN_HEIGHT = 1080
+SCREEN_TITLE = "EDWARDBORNE"
 
 
-class edwardborne(arcade.Window):
-    """
-    Main application class.
-    """
-
+class EDWARDBORNE(arcade.Window):
     def __init__(self):
+        super().__init__(SCREEN_WIDTH, SCREEN_HEIGHT, SCREEN_TITLE)
 
-        # Call the parent class and set up the window
-        super().__init__(edwardborne_SCREEN_WIDTH, edwardborne_SCREEN_HEIGHT, edwardborne_SCREEN_TITLE)
-
-        arcade.set_background_color(arcade.csscolor.RED)
-        # Call the parent class and set up the window
-        super().__init__(edwardborne_SCREEN_WIDTH, edwardborne_SCREEN_HEIGHT, edwardborne_SCREEN_TITLE)
-
-        arcade.set_background_color(arcade.csscolor.RED)
+        arcade.set_background_color(arcade.csscolor.DIM_GRAY)
 
     def setup(self):
-        """Set up the game here. Call this function to restart the game."""
         pass
 
     def on_draw(self):
-        """Render the screen."""
-
         self.clear()
-        # Code to draw the screen goes here
-
 
 def main():
-    """Main function"""
-    window = edwardborne()
+    window = EDWARDBORNE()
     window.setup()
-    arcade.run()
-
+    window.run()
 
 if __name__ == "__main__":
     main()
