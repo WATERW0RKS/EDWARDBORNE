@@ -3,23 +3,63 @@ EDWARDBORNE
 """
 import arcade
 from arcade.examples.sprite_bullets_aimed import SCREEN_HEIGHT, SCREEN_TITLE
+from arcade.examples.sprite_move_animation import CHARACTER_SCALING
+from arcade.examples.sprite_tiled_map import TILE_SCALING
 
 SCREEN_WIDTH = 1920
 SCREEN_HEIGHT = 1080
 SCREEN_TITLE = "EDWARDBORNE"
+CHARACTER_SCALING = 1
+TILE_SCALING = 0.5
+
 
 
 class EDWARDBORNE(arcade.Window):
     def __init__(self):
         super().__init__(SCREEN_WIDTH, SCREEN_HEIGHT, SCREEN_TITLE)
-
+        self.wall_list = None
+        self.player_list = None
+        self.player_sprite = None
         arcade.set_background_color(arcade.csscolor.DIM_GRAY)
+
+
+    def setup(self):
+        self.player_list = arcade.SpriteList()
+        self.wall_list = arcade.SpriteList(use_spatial_hash=True)
+        image_source = ("resources:images/player_stand.png", TILE_SCALING)
+        self.player_sprite = arcade.Sprite("/home/brody/PycharmProjects/vEdwardsBornev/images/player_stand.png", CHARACTER_SCALING)
+        self.player_sprite.center_x = 64
+        self.player_sprite.center_y = 128
+        self.player_list.append(self.player_sprite)
+
+        for x in range(0, 1250, 64):
+            wall = arcade.Sprite(":resources:images/player_stand.png", TILE_SCALING)
+            wall.center_x = x
+            wall.center_y = 32
+            self.wall_list.append(wall)
+
+
+        coordinate_list = [[512, 96], [256, 96], [768, 96]]
+        for coordinate in coordinate_list:
+            wall = arcade.Sprite(
+                ":resources:images/player_stand.png", TILE_SCALING
+            )
+            wall.position = coordinate
+            self.wall_list.append(wall)
+
+
+
+
+
 
     def setup(self):
         pass
 
     def on_draw(self):
         self.clear()
+        self.wall_list.draw()
+        self.player_list.draw()
+
 
 def main():
     window = EDWARDBORNE()
